@@ -1,0 +1,63 @@
+@media(max-width:69em) {
+    .hero-form {
+        flex-direction: column;
+    }
+}
+
+@media(max-width:59em) {
+
+    html {
+        font-size: 55%;
+    }
+
+    .grid-2-cols,
+    .grid-2--cols,
+    .grid-4-cols {
+        grid-template-columns: 1fr;
+        gap: 4.8rem;
+    }
+
+    .hero-image-box,
+    .testimoial-image-box {
+        grid-row: 1;
+    }
+
+    .nav-ul {
+        gap: 1.6rem;
+    }
+
+    .nav-li {
+        font-size: 1.4rem;
+    }
+
+    .btn:link,
+    .btn:visited {
+        text-align: center;
+    }
+
+    .testimonials {
+        background-image: url("../images/bg-curve-mobile.svg");
+    }
+
+    .mobile {
+        width: fit-content;
+        height: 2.4rem;
+    }
+
+    .sign-form input,
+    .sign-form a {
+        width: 100%;
+    }
+}
+
+@media(max-width:37em) {
+
+    html {
+        font-size: 50%;
+    }
+
+    .heading-prime {
+        font-size: 2.4rem;
+    }
+
+}

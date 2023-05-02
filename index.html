@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Fylo landing page with two column layout</title>
+
+  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/quereis.css" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="container header-top">
+      <img src="images/logo.svg" class="logo" alt="logo" />
+
+      <nav class="header-nav">
+        <ul class="nav-ul">
+          <li class="nav-li">Features</li>
+          <li class="nav-li">Team</li>
+          <li class="nav-li ">Sign In</li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container grid grid-2-cols">
+      <div class="hero-text">
+        <h1 class="heading-prime">
+          All your files in one secure location, accessible anywhere.
+        </h1>
+        <p class="hero-text-p">
+          Fylo stores your most important files in one secure location.
+          Access them wherever you need, share and collaborate with friends,
+          family, and co-workers.
+        </p>
+        <form class="hero-form">
+          <input type="email" placeholder="me@gmail.com" required />
+          <a href="#" class="btn">Get Started</a>
+        </form>
+      </div>
+
+      <div class="hero-image-box">
+        <img src="images/illustration-1.svg" class="hero-image">
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonials">
+    <div class="container grid grid-2--cols">
+      <div class="testimonial-text-box">
+        <h1 class="heading-prime">
+          Stay productive, wherever you are
+        </h1>
+        <p class="hero-text-p">
+          Never let location be an issue when accessing your files. Fylo has you
+          covered for all of your file storage needs.
+        </p>
+        <p class="hero-text-p p-litle-margin">
+          Securely share files and folders with friends, family and colleagues for
+          live collaboration. No email attachments required!
+        </p>
+        <a class="how-work" href="#">See how Fylo works &rArr;</a>
+
+        <div class="card">
+          <img src="images/icon-quotes.svg" class="svg-card " />
+          <p class="hero-text-p p-litle-margin">
+            Fylo has improved our team productivity by an order of magnitude. Since
+            making the switch our team has become a well-oiled collaboration machine.
+          </p>
+          <div class="avatar">
+            <img src="images/avatar-testimonial.jpg" class="avatar-img" />
+            <div class="avatar-text">
+              <h3 class="avatar-heading">Kyle Burton</h3>
+              <span class="avatar-span">Founder & CEO, Huddle</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimoial-image-box">
+        <img src="images/illustration-2.svg" class="hero-image">
+      </div>
+    </div>
+  </section>
+
+  <section class="sign-up">
+    <div class="container grid grid-2-cols">
+      <div class="contact-text">
+        <h1 class="heading-prime p-litle-margin">
+          Get early access today
+        </h1>
+        <p class="color-white">
+          It only takes a minute to sign up and our free starter tier is extremely generous.
+          If you have any questions, our support team would be happy to help you.
+        </p>
+      </div>
+      <form class="sign-form">
+        <input type="email" placeholder="me@gmail.com" required class="p-litle-margin m-width" />
+        <a href="#" class="btn fit-content">Get Started For Free</a>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container grid grid-4-cols">
+      <div class="logo-info">
+        <img src="images/logo.svg" class="logo ch-white mobile" alt="logo" />
+        <span class="icon-span"> <ion-icon name="call-outline" class="icon"></ion-icon>Phone: +1-543-123-4567</span>
+        <span class="icon-span"> <ion-icon name="mail-outline" class="icon"></ion-icon>example@fylo.com</span>
+      </div>
+
+      <div class="about-info">
+        <ul class="footer-ul">
+          <li class="footer-li">About Us</li>
+          <li class="footer-li">Jobs</li>
+          <li class="footer-li"> Press</li>
+          <li class="footer-li">Blog</li>
+        </ul>
+      </div>
+
+      <div class="contact-info">
+        <ul class="footer-ul">
+          <li class="footer-li">Contact Us</li>
+          <li class="footer-li">Terms</li>
+          <li class="footer-li"> Privacy</li>
+        </ul>
+      </div>
+
+      <div class="icons-info">
+        <ion-icon name="logo-facebook" class="icon-info"></ion-icon>
+        <ion-icon name="logo-twitter" class="icon-info"></ion-icon>
+        <ion-icon name="logo-instagram" class="icon-info"></ion-icon>
+      </div>
+    </div>
+  </footer>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

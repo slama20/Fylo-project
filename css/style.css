@@ -1,0 +1,311 @@
+/*
+ -- TYPOGRHAPY SYSTEM
+
+ - font size system(px)
+   10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+ - font wieght 
+           => 400 
+           => 500
+           => 600
+
+
+-- WHITESPACE
+-- spacing system (px)
+    2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
+
+/*********************/
+/* Genral components*/
+/*********************/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #1b1b36;
+}
+
+.container {
+    width: 80%;
+    margin: 2rem auto;
+}
+
+.grid {
+    display: grid;
+    align-items: center;
+    gap: 1.4rem;
+}
+
+.grid-2-cols {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.8rem;
+}
+
+.grid-2--cols {
+    grid-template-columns: 1.2fr .8fr;
+}
+
+.grid-4-cols {
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-between;
+}
+
+
+/* ### Triks ### */
+.color-white {
+    font-size: 1.8rem;
+    line-height: 1.5;
+    margin-bottom: 3rem;
+    color: #bbb;
+}
+
+.m-width {
+    width: 70%;
+}
+
+.p-litle-margin {
+    margin-bottom: .8rem;
+}
+
+.fit-content {
+    width: fit-content;
+}
+
+/* #### Start header ##### */
+
+.header {
+    margin-bottom: 4.8rem;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    height: 2.4rem;
+}
+
+.nav-ul {
+    list-style: none;
+    display: flex;
+    gap: 3.2rem;
+}
+
+.nav-li {
+    font-size: 1.6rem;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.nav-li:hover {
+    color: hsl(224, 100%, 58%);
+}
+
+/* #### Start section hero ##### */
+
+.hero {
+    margin-bottom: 12.8rem;
+}
+
+.hero-text {
+    align-items: center;
+}
+
+.heading-prime {
+    font-size: 3.6rem;
+    font-weight: 600;
+    line-height: 1.1;
+    margin-bottom: 3rem;
+}
+
+.hero-text-p {
+    font-size: 1.8rem;
+    line-height: 1.5;
+    margin-bottom: 3rem;
+    color: #767686;
+}
+
+.hero-form {
+    display: flex;
+    gap: 1.2rem;
+}
+
+.sign-form input,
+.hero-form input {
+    padding: 1rem 4rem;
+    font-size: 1.4rem;
+    border: 1px solid #767686;
+    outline: none;
+}
+
+.sign-form input,
+.hero-form input ::placeholder {
+    color: #767686;
+}
+
+.btn:link,
+.btn:visited {
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: .8rem 3.2rem;
+    background-color: hsl(224, 100%, 58%);
+    color: #fff;
+    border-radius: 2px;
+}
+
+.btn:hover {
+    background-color: hsl(224, 92%, 64%);
+}
+
+.hero-image {
+    width: 100%;
+}
+
+/* #### Start Testimonials section ##### */
+
+.testimonials {
+    padding: 2.4rem 0 6.4rem 0;
+    background-image: url("../images/bg-curve-desktop.svg");
+    background-position: top;
+    background-size: cover;
+}
+
+.how-work:link,
+.how-work:visited {
+    color: hsl(240, 51%, 62%);
+    text-decoration: none;
+    font-size: 1.6em;
+    font-weight: 600;
+    border-bottom: 1px solid hsl(240, 51%, 62%);
+}
+
+.how-work:hover {
+    color: hsl(224, 93%, 58%);
+    border-bottom: 1px solid hsl(224, 93%, 58%);
+}
+
+.card {
+    width: 80%;
+    margin-top: 4.8rem;
+    padding: 1.6rem;
+    background-color: #fff;
+    box-shadow: 0 0 7px rgb(0 0 0 / 7%);
+    border-radius: 4px;
+}
+
+.svg-card {
+    width: 1.8rem;
+    height: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.avatar {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    margin-top: 1.2rem;
+}
+
+.avatar-img {
+    width: 4.8rem;
+    height: 4.8rem;
+    border-radius: 999px;
+}
+
+.avatar-heading {
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.avatar-span {
+    font-weight: 400;
+}
+
+/* #### Start sign-up section ##### */
+
+.sign-up {
+    padding: 2.4rem 0 2.4rem 0;
+    color: #fff;
+    background-color: hsl(238, 22%, 44%);
+}
+
+.sign-form {
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+}
+
+/* #### Start Footer ##### */
+
+.footer {
+    padding: 3.2rem 0 3.2rem 0;
+    color: #a2a2b8;
+    background-color: hsl(243, 87%, 12%);
+}
+
+.logo-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    align-content: center;
+}
+
+.ch-white {
+    width: 50%;
+    fill: #fff;
+}
+
+.icon {
+    width: 1.4rem;
+    height: 1.4rem;
+    margin-right: .8rem;
+}
+
+.icon-span {
+    display: flex;
+    align-items: center;
+    font-size: 1.6rem;
+}
+
+.footer-ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.footer-li {
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+
+.footer-li:hover {
+    color: hsl(238, 22%, 44%);
+}
+
+.icons-info {
+    display: flex;
+    gap: 1.6rem;
+}
+
+.icon-info {
+    width: 2.8rem;
+    height: 2.8rem;
+    cursor: pointer;
+}
+
+.icon-info:hover {
+    color: hsl(238, 22%, 44%);
+}
